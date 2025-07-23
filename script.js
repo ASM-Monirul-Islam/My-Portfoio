@@ -72,13 +72,11 @@ themeChanger.forEach((e) => {
 
 // Theme changer ends here...
 
-
 // Navigator button
 
-const btn = document.querySelectorAll(".nav-btn-theme");
-
-btn.forEach((e)=>{
-    e.addEventListener("click", ()=>{
-      menuBartoggle();
-    })
-})
+const btn = document.querySelectorAll("#menu-btn");
+btn.forEach((e) => {
+  e.addEventListener("click", () => {
+    menuBartoggle();
+  });
+});
