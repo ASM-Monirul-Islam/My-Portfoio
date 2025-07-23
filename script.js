@@ -6,7 +6,7 @@ const menuBar = document.querySelector(".menu-bar");
 
 let isBar = true;
 
-menu.addEventListener("click", () => {
+function menuBartoggle() {
   if (isBar) {
     menu.innerHTML = cross;
     navBar.classList.add("nav-bar-hidden");
@@ -17,6 +17,10 @@ menu.addEventListener("click", () => {
     menuBar.classList.add("hidden-menu-bar");
   }
   isBar = !isBar;
+}
+
+menu.addEventListener("click", () => {
+  menuBartoggle();
 });
 
 // Theme Changer - need to improve more
@@ -25,7 +29,7 @@ const light = '<i class="fas fa-sun"></i>';
 const dark = '<i class="fa-solid fa-moon"></i>';
 const themeChanger = document.querySelectorAll(".theme-changer");
 const blackColor = document.querySelectorAll(".black-color");
-const navBtn = document.querySelectorAll(".nav-btn-theme");
+const navBtnTheme = document.querySelectorAll(".nav-btn-theme");
 
 function Light_to_dark() {
   //	Light to dark function
@@ -34,7 +38,7 @@ function Light_to_dark() {
     e.style.backgroundColor = "black";
     e.style.color = "white";
   });
-  navBtn.forEach((e) => {
+  navBtnTheme.forEach((e) => {
     e.style.color = "white";
   });
 }
@@ -46,7 +50,7 @@ function Dark_to_light() {
     e.style.backgroundColor = "#cce7fc";
     e.style.color = "black";
   });
-  navBtn.forEach((e) => {
+  navBtnTheme.forEach((e) => {
     e.style.color = "black";
   });
 }
@@ -67,3 +71,14 @@ themeChanger.forEach((e) => {
 });
 
 // Theme changer ends here...
+
+
+// Navigator button
+
+const btn = document.querySelectorAll(".nav-btn-theme");
+
+btn.forEach((e)=>{
+    e.addEventListener("click", ()=>{
+      menuBartoggle();
+    })
+})

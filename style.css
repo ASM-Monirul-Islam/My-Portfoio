@@ -7,6 +7,11 @@
   font-size: 1rem;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
+
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -14,6 +19,7 @@
   height: 80px;
   width: 100%;
   background-color: #cce7fc;
+  position: fixed;
 }
 
 .nav-container {
@@ -87,6 +93,7 @@
 
 .theme-changer i {
   font-size: 1.3rem;
+  padding: 10px;
 }
 
 /* Hidden menu */
@@ -125,7 +132,6 @@
 }
 
 #menu-btn {
-  padding: 10px;
   margin: 5px;
   border: none;
   width: 100%;
@@ -145,6 +151,9 @@
 }
 
 #menu-btn a{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
@@ -152,6 +161,13 @@
 
 .hidden-menu-bar {
   display: none;
+}
+
+/* Main body CSS starts here */
+
+section {
+  width: 100%;
+  min-height: 100vh;
 }
 
 
