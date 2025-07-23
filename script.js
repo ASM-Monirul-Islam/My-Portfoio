@@ -41,7 +41,7 @@ function Light_to_dark() {
 
 function Dark_to_light() {
   //   Dark to Light Function
-  
+
   blackColor.forEach((e) => {
     e.style.backgroundColor = "#cce7fc";
     e.style.color = "black";
@@ -57,9 +57,9 @@ themeChanger.forEach((e) => {
   e.addEventListener("click", () => {
     if (isLight) {
       Light_to_dark();
-	  e.innerHTML = dark;
+      e.innerHTML = dark;
     } else {
-		e.innerHTML = light;
+      e.innerHTML = light;
       Dark_to_light();
     }
     isLight = !isLight;
