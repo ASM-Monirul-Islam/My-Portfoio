@@ -23,6 +23,7 @@ a {
   width: 100%;
   background-color: #cce7fc;
   position: fixed;
+  z-index: 99999;
 }
 
 .nav-container {
@@ -230,6 +231,12 @@ section {
   font-size: 1.5rem;
 }
 
+.home-shortcut {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .view-work {
   padding: 17px 35px;
   border: none;
@@ -240,7 +247,6 @@ section {
   font-weight: 550;
   cursor: pointer;
   color: black;
-  margin: auto;
 }
 
 .view-work:hover {
@@ -377,33 +383,32 @@ section {
   justify-content: center;
 }
 
-.form{
+.form {
   padding: 20px 25px;
   border-radius: 10px;
-  box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 350px;
-  background-color: white;
+  background-color: transparent;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
 }
 
-.input{
+.input {
   padding: 8px 15px;
-  border: 1px solid black;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border: none;
+  border-radius: 10px;
 }
 
-textarea{
+textarea {
   resize: none;
   height: 10rem;
   padding: 10px;
-  border: 0.5px solid gray;
+  border: none;
+  border-radius: 15px;
 }
 
-.form button{
+.form button {
   background-color: #55b4f8;
   border: none;
   padding: 10px 20px;
@@ -411,7 +416,7 @@ textarea{
   margin: 7px 0px 0px 0px;
 }
 
-.error{
+.error {
   font-size: 0.85rem;
   color: red;
   font-style: italic;
@@ -507,6 +512,7 @@ textarea{
   .view-work {
     margin-left: 0px;
     padding: 10px 20px;
+    font-size: 0.9rem;
   }
 
   .home-right-subtext {
@@ -560,11 +566,11 @@ textarea{
     padding: 7px 15px;
   }
 
-  .contact-container{
+  .contact-container {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .contact-right{
+  .contact-right {
     width: 100%;
   }
 }

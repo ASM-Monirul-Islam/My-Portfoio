@@ -12,9 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -102,10 +103,21 @@
                 World University of Bangladesh. I thrive on solving complex
                 problems and building efficient, user-focused solutions.
               </div>
-              <a class="view-work-container" href="https://github.com/ASM-Monirul-Islam">
-                <div class="view-work">View My Works</div>
-              </a>
-              
+              <div class="home-shortcut">
+                <a
+                  class="view-work"
+                  href="https://github.com/ASM-Monirul-Islam"
+                >
+                  View Works
+                </a>
+                <a
+                  class="view-work"
+                  href="assets/Resume of Monirul.pdf"
+                  target="_blank"
+                >
+                  My Resume
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -113,16 +125,28 @@
 
       <section id="about">about</section>
       <section id="education">
-        <div class="education-title">
-          My Academic Journey
-        </div>
+        <div class="education-title">My Academic Journey</div>
         <div class="education-container">
           <div class="education-box">
             <div class="edu-logo varsity"></div>
             <div class="edu-content">
               <div class="institution-name">World University of Bangladesh</div>
-              <div class="edu-department">B.Sc. in Computer Science & Engineering</div>
-              <div class="edu-details">I am currently pursuing a Bachelor of Science in Computer Science & Engineering (CSE) at the World University of Bangladesh, Uttara, Dhaka, where I am in my 7th semester (Batch 65D) with a current CGPA of 3.99 (Out of 4.00). My coursework emphasizes Object-Oriented Programming, Data Structures & Algorithms, Web Technologies, Digital Logic Design, and Discrete Mathematics. Beyond academics, I actively contribute to the university’s tech community as the Secretary of Competitive Programming in the WUB Computer Society. In 2024, I successfully organized the Battle of Coders, an online programming contest that engaged competitive programmers across the university.</div>
+              <div class="edu-department">
+                B.Sc. in Computer Science & Engineering
+              </div>
+              <div class="edu-details">
+                I am currently pursuing a Bachelor of Science in Computer
+                Science & Engineering (CSE) at the World University of
+                Bangladesh, Uttara, Dhaka, where I am in my 7th semester (Batch
+                65D) with a current CGPA of 3.99 (Out of 4.00). My coursework
+                emphasizes Object-Oriented Programming, Data Structures &
+                Algorithms, Web Technologies, Digital Logic Design, and Discrete
+                Mathematics. Beyond academics, I actively contribute to the
+                university’s tech community as the Secretary of Competitive
+                Programming in the WUB Computer Society. In 2024, I successfully
+                organized the Battle of Coders, an online programming contest
+                that engaged competitive programmers across the university.
+              </div>
               <a class="edu-link" href="#">Visit Website</a>
             </div>
           </div>
@@ -133,7 +157,12 @@
             <div class="edu-content">
               <div class="institution-name">Rajuk Uttara Model College</div>
               <div class="edu-department">H.S.C. in Science</div>
-              <div class="edu-details">I completed my Higher Secondary Certificate (H.S.C.) in Science from Rajuk Uttara Model College, Uttara, Dhaka, where I studied from 2019 to 2021. I achieved a GPA of 5.00 in all subjects, with a strong focus on Mathematics, Physics, and Chemistry.</div>
+              <div class="edu-details">
+                I completed my Higher Secondary Certificate (H.S.C.) in Science
+                from Rajuk Uttara Model College, Uttara, Dhaka, where I studied
+                from 2019 to 2021. I achieved a GPA of 5.00 in all subjects,
+                with a strong focus on Mathematics, Physics, and Chemistry.
+              </div>
               <a class="edu-link" href="#">Visit Website</a>
             </div>
           </div>
@@ -142,7 +171,15 @@
             <div class="edu-content">
               <div class="institution-name">Akij Collegiate School</div>
               <div class="edu-department">S.S.C. in Science</div>
-              <div class="edu-details">I completed my Secondary School Certificate (S.S.C.) in Science from Akij Collegiate School, Navaron, Jashore, achieving a GPA of 5.00 in all subjects. During my school years, I was an active member of the Debating Club and participated in several Science Fairs with different projects. I was also awarded multiple times for my involvement in cultural performances, including arts, sports, national songs, and poetry recitation.</div>
+              <div class="edu-details">
+                I completed my Secondary School Certificate (S.S.C.) in Science
+                from Akij Collegiate School, Navaron, Jashore, achieving a GPA
+                of 5.00 in all subjects. During my school years, I was an active
+                member of the Debating Club and participated in several Science
+                Fairs with different projects. I was also awarded multiple times
+                for my involvement in cultural performances, including arts,
+                sports, national songs, and poetry recitation.
+              </div>
               <a class="edu-link" href="#">Visit Website</a>
             </div>
           </div>
@@ -152,27 +189,28 @@
       <section id="experience">experience</section>
       <section id="projects">projects</section>
 
-
       <section id="contact">
         <div class="contact-container">
           <div class="contact-left">
-            <div class="contact-left-container">
-
-            </div>
+            <div class="contact-left-container"></div>
           </div>
           <div class="contact-right">
             <form action="files/send_mail.php" method="post" class="form">
               <label>Name</label>
-              <input type="text" name="name" class="name input">
+              <input type="text" name="name" class="name input" />
               <span class="error nameErr"></span>
               <label>Email</label>
-              <input type="email" name="email" class="email input">
+              <input type="email" name="email" class="email input" />
               <span class="error emailErr"></span>
               <label>Subject</label>
-              <input type="text" name="subject" class="subject input">
+              <input type="text" name="subject" class="subject input" />
               <span class="error subjectErr"></span>
               <label>Your Message</label>
-              <textarea name="message" class="message" placeholder="Write your message here..."></textarea>
+              <textarea
+                name="message"
+                class="message"
+                placeholder="Write your message here..."
+              ></textarea>
               <span class="error messageErr"></span>
               <button type="submit">Send Email</button>
               <!-- <button type="reset">Reset</button> -->
