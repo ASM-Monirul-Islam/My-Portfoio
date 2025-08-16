@@ -389,7 +389,7 @@ section {
 }
 
 .input{
-  padding: 10px 15px;
+  padding: 8px 15px;
   border: 1px solid black;
   border-left: none;
   border-right: none;
@@ -398,7 +398,7 @@ section {
 
 textarea{
   resize: none;
-  height: 7rem;
+  height: 10rem;
   padding: 10px;
   border: 0.5px solid gray;
 }
