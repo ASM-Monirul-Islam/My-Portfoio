@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-padding-top: 85px;
+  scroll-padding-top: 80px;
 }
 
 a {
@@ -171,10 +171,12 @@ a {
 section {
   width: 100%;
   min-height: 100vh;
+  background-color: rgba(27, 126, 224, 0.1);
 }
 
 #home {
   padding: 85px 10px 10px 10px;
+  background-color: rgba(27, 126, 224, 0.1);
 }
 
 .home-container {
@@ -193,12 +195,12 @@ section {
 }
 
 .home-image {
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   border: none;
   box-shadow: 0 0 18px rgba(0, 128, 255, 0.8);
-  background-image: url("Monirul.jpg");
+  background-image: url("assets/Monirul.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,33 +212,26 @@ section {
 
 .home-right-container {
   min-height: fit-content;
-  /* background-color: pink; */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 10px;
   gap: 1rem;
 }
 
 .home-right-name {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: bolder;
 }
 
-.home-right-list ul {
-  display: flex;
-  font-weight: 550;
-  font-size: 1.2rem;
-  gap: 2rem;
-}
-
 .home-right-subtext {
-  line-height: 1.3;
-  width: 80%;
+  line-height: 1.2;
+  width: 85%;
+  font-size: 1.5rem;
 }
 
 .view-work {
-  padding: 8px 20px;
+  padding: 17px 35px;
   border: none;
   border-radius: 15px;
   margin-left: 20px;
@@ -245,6 +240,7 @@ section {
   font-weight: 550;
   cursor: pointer;
   color: black;
+  margin: auto;
 }
 
 .view-work:hover {
@@ -258,6 +254,167 @@ section {
 .view-work:active {
   transform: scale(0.9, 0.9);
   transition: transform 0.1s ease;
+}
+
+/* Education section */
+
+#education {
+  padding: 35px 10px 10px 10px;
+}
+
+.education-title {
+  font-size: 2.5rem;
+  font-weight: 550;
+  margin: 20px 0px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.education-box {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.edu-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.edu-department {
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+.institution-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.edu-logo {
+  height: 300px;
+  width: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-details {
+  width: 100%;
+  line-height: 1.2;
+  font-size: 1.16rem;
+}
+
+.varsity {
+  background-image: url("assets/WUB_logo.png");
+}
+
+.college {
+  background-image: url("assets/RUMC_logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65%;
+  width: 65%;
+}
+
+.school {
+  background-image: url("assets/ACS_logo.png");
+}
+
+.edu-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  padding: 12px 60px;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #badff9;
+  font-weight: 550;
+}
+.edu-link:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s ease;
+  background-color: #55b4f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+/* Contact Section */
+
+#contact {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 20px 10px;
+}
+
+.contact-container {
+  display: flex;
+  padding: 10px;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+}
+
+.contact-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 350px;
+  background-color: white;
+}
+
+.input{
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+textarea{
+  resize: none;
+  height: 7rem;
+  padding: 10px;
+  border: 0.5px solid gray;
+}
+
+.form button{
+  background-color: #55b4f8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 7px 0px 0px 0px;
+}
+
+.error{
+  font-size: 0.85rem;
+  color: red;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 769px) {
@@ -328,40 +485,80 @@ section {
     align-items: center;
     background-color: #cce7fc;
   }
-  .home-container{
-    flex-wrap: wrap;
-    align-items: flex-start;
+  #home {
+    padding: 110px 10px 10px 10px;
   }
-  .home-left, .home-right{
+  .home-container {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .home-left,
+  .home-right {
     width: 100%;
   }
-  .home-right-container{
+  .home-right-container {
     align-items: center;
     gap: 2rem;
   }
-  .view-work{
+  .home-right-name {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  .view-work {
     margin-left: 0px;
+    padding: 10px 20px;
   }
 
-  .home-right-list ul{
-    gap: 0.7rem;
-    list-style: none;
+  .home-right-subtext {
+    width: 100%;
+    font-size: 1rem;
   }
 
-  .home-right-list ul li{
+  .home-image {
+    height: 250px;
+    width: 250px;
+  }
+
+  .education-box {
+    flex-wrap: wrap;
+  }
+  .edu-logo {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .school {
+    margin-bottom: 10px;
+  }
+  .edu-content {
+    width: 100%;
+  }
+  .institution-name {
+    font-size: 1.2rem;
     text-align: center;
   }
 
-  .home-right-subtext{
+  .edu-department {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .edu-details {
+    font-size: 0.9rem;
     width: 100%;
+    padding-left: 10px;
   }
 
-  .home-image{
-    height: 250px;
-  width: 250px;
+  .education-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0;
   }
 
-
+  .edu-link {
+    padding: 7px 15px;
+  }
 }
 
 @media only screen and (max-width: 450px) {

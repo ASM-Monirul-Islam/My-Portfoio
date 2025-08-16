@@ -80,3 +80,85 @@ btn.forEach((e) => {
     menuBartoggle();
   });
 });
+
+// Form Validation
+
+const form = document.querySelector(".form");
+
+const nameInput = document.querySelector(".name");
+const emailInput = document.querySelector(".email");
+const subjectInput = document.querySelector(".subject");
+const messageInput = document.querySelector(".message");
+
+const error = document.querySelectorAll(".error");
+const nameErr = document.querySelector(".nameErr");
+const emailErr = document.querySelector(".emailErr");
+const subjectErr = document.querySelector(".subjectErr");
+const messageErr = document.querySelector(".messageErr");
+const finalErr = document.querySelector(".finalErr");
+
+error.forEach((e) => {
+  e.textContent = "";
+});
+
+nameInput.addEventListener("input", (e) => {
+  const name = nameInput.value.trim();
+  if (!name) {
+    nameErr.textContent = "Please enter your name!";
+  } else if (name.length < 3) {
+    nameErr.textContent = "Name must contain at least 3 characters!";
+  } else {
+    nameErr.textContent = "";
+  }
+});
+
+emailInput.addEventListener("input", (e) => {
+  const email = emailInput.value.trim();
+  const pattern = /^\S+@\S+\.\S+$/;
+  if (!email) {
+    emailErr.textContent = "Please enter your email!";
+  } else if (!pattern.test(email)) {
+    emailErr.textContent = "Invalid email format!";
+  } else {
+    emailErr.textContent = "";
+  }
+});
+
+subjectInput.addEventListener("input", (e) => {
+  const subject = subjectInput.value.trim();
+  if (!subject) {
+    subjectErr.textContent = "This field is required";
+  } else {
+    subjectErr.textContent = "";
+  }
+});
+
+messageInput.addEventListener("input", (e) => {
+  const message = messageInput.value.trim();
+  if (!message) {
+    messageErr.textContent = "Write your message";
+  } else {
+    messageErr.textContent = "";
+  }
+});
+
+
+
+form.addEventListener("submit", (e) => {
+  nameInput.dispatchEvent(new Event("input"));
+  emailInput.dispatchEvent(new Event("input"));
+  subjectInput.dispatchEvent(new Event("input"));
+  messageInput.dispatchEvent(new Event("input"));
+
+  if (
+    nameErr.textContent ||
+    emailErr.textContent ||
+    subjectErr.textContent ||
+    messageErr.textContent
+  ) {
+    e.preventDefault();
+    finalErr.textContent = "Please fix the errors before submitting!";
+  } else {
+    finalErr.textContent = "";
+  }
+});
