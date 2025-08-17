@@ -197,19 +197,19 @@
           <div class="contact-right">
             <form class="form">
               <label>Name</label>
-              <input type="text" name="name" class="name input" />
+              <input type="text" name="name" class="name input" required/>
               <span class="error nameErr"></span>
               <label>Email</label>
-              <input type="email" name="email" class="email input" />
+              <input type="email" name="email" class="email input" required/>
               <span class="error emailErr"></span>
               <label>Subject</label>
-              <input type="text" name="subject" class="subject input" />
+              <input type="text" name="subject" class="subject input" required/>
               <span class="error subjectErr"></span>
               <label>Your Message</label>
               <textarea
                 name="message"
                 class="message"
-                placeholder="Write your message here..."
+                placeholder="Write your message here..." required
               ></textarea>
               <span class="error messageErr"></span>
               <button type="submit">Send Email</button>
