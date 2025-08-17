@@ -172,12 +172,11 @@ a {
 section {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(27, 126, 224, 0.1);
 }
 
 #home {
   padding: 85px 10px 10px 10px;
-  background-color: rgba(27, 126, 224, 0.1);
+  
 }
 
 .home-container {
@@ -363,7 +362,7 @@ section {
 /* Contact Section */
 
 #contact {
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  background-color: rgba(27, 126, 224, 0.1);
   padding: 20px 10px;
 }
 
