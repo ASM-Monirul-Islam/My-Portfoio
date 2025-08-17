@@ -162,3 +162,40 @@ form.addEventListener("submit", (e) => {
     finalErr.textContent = "";
   }
 });
+
+
+// send mail feature
+(function() {
+    emailjs.init("OllNTO72X5lwUHnq1"); // Replace with your EmailJS public key
+})();
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default submission
+
+    // Get input values using classes
+    const name = form.querySelector(".name").value.trim();
+    const email = form.querySelector(".email").value.trim();
+    const subject = form.querySelector(".subject").value.trim();
+    const message = form.querySelector(".message").value.trim();
+
+    // Optional: Basic validation
+    if (!name || !email || !subject || !message) {
+        form.querySelector(".finalErr").textContent = "Please fill in all fields.";
+        return;
+    } else {
+        form.querySelector(".finalErr").textContent = "";
+    }
+
+    // Send email via EmailJS
+    emailjs.send("service_vd0cust", "template_p5cl6f1", {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    }).then(function(response) {
+        alert("Message sent successfully!");
+        form.reset(); // Reset form after successful submission
+    }, function(error) {
+        alert("Failed to send message. Please try again.");
+        console.log(error);
+    });
+});

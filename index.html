@@ -195,7 +195,7 @@
             <div class="contact-left-container"></div>
           </div>
           <div class="contact-right">
-            <form action="files/send_mail.php" method="post" class="form">
+            <form class="form">
               <label>Name</label>
               <input type="text" name="name" class="name input" />
               <span class="error nameErr"></span>
@@ -222,5 +222,12 @@
     </main>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("OllNTO72X5lwUHnq1"); // replace with your public key
+   })();
+</script>
+
   </body>
 </html>
