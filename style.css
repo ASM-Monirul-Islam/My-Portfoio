@@ -261,18 +261,20 @@ section {
   border: none;
   border-radius: 15px;
   margin-left: 20px;
-  background-color: rgba(27, 126, 224, 0.5);
+  /* background-color: rgba(27, 126, 224, 0.5); */
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 8px rgba(0, 128, 255, 0.5);
   font-weight: 550;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
 .view-work:hover {
-  background-color: rgba(27, 126, 224, 0.9);
+  /* background-color: rgba(27, 126, 224, 0.9); */
   box-shadow: 0 0 8px rgb(1, 99, 198);
   transform: scale(1.05, 1.05);
-  color: white;
+  color: rgba(27, 126, 224, 0.9);
+  background-color: black;
   transition: transform 0.3s ease;
 }
 
