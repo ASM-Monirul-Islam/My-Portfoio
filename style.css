@@ -199,7 +199,7 @@ section {
   width: 500px;
   border-radius: 50%;
   border: none;
-  box-shadow: 0 0 18px rgba(0, 128, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-image: url("assets/Monirul.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -391,6 +391,7 @@ section {
 .contact-container {
   display: flex;
   padding: 10px;
+  border: none;
 }
 
 .contact-left,
@@ -465,6 +466,22 @@ textarea {
   height: 450px;
   width: 350px;
   background-color: red;
+}
+
+.bring-to-top{
+  height: 30px;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+  font-size: 1.3rem;
+  background-color: rgba(85, 180, 248, 0.4);
+}
+.bring-to-top:hover{
+  background-color: rgba(85, 180, 248, 0.8);
+  transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 769px) {
@@ -598,7 +615,7 @@ textarea {
   }
 
   .home-links ul a li i{
-  font-size: 2rem;
+  font-size: 2.3rem;
   }
 
   .education-box {
@@ -663,6 +680,10 @@ textarea {
 
   .get-in-touch{
     font-size: 2rem;
+  }
+
+  .bring-to-top{
+    font-size: 0.9rem;
   }
 }
 
