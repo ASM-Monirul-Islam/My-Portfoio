@@ -391,6 +391,7 @@ section {
   width: 100%;
   flex-wrap: wrap;
   padding: 30px 0px;
+  row-gap: 50px;
 
 }
 
@@ -738,6 +739,10 @@ textarea {
     width: 80%;
     margin: 10px;
     padding: 10px 20px 10px 50px;
+  }
+
+  .skill-container{
+    row-gap: 10px;
   }
 
   .skill-name{
