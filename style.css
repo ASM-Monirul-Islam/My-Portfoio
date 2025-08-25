@@ -261,20 +261,20 @@ section {
   border: none;
   border-radius: 15px;
   margin-left: 20px;
-  /* background-color: rgba(27, 126, 224, 0.5); */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(27, 126, 224, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.9); */
   box-shadow: 0 0 8px rgba(0, 128, 255, 0.5);
   font-weight: 550;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 .view-work:hover {
-  /* background-color: rgba(27, 126, 224, 0.9); */
+  background-color: rgba(27, 126, 224, 0.9);
   box-shadow: 0 0 8px rgb(1, 99, 198);
-  transform: scale(1.05, 1.05);
-  color: rgba(27, 126, 224, 0.9);
-  background-color: black;
+  transform: scale(1.05, 1.05) translateY(-5px);
+  color: white;
+  /* background-color: black; */
   transition: transform 0.3s ease;
 }
 
@@ -463,6 +463,17 @@ section {
   gap: 1rem;
 }
 
+.contact-image {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: url("assets/Monirul.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 .form {
@@ -511,13 +522,16 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; 
+  margin-top: 20px;
 }
 
-.contact-image {
-  height: 450px;
-  width: 350px;
-  background-color: red;
+.contact-links{
+  margin-top: 20px;
 }
+
+
+
 
 .bring-to-top{
   height: 30px;
@@ -546,6 +560,13 @@ textarea {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
   margin-left: 30px;
+}
+
+@media only screen and (max-height: 620px) {
+  .home-image {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 769px) {
@@ -756,8 +777,9 @@ textarea {
     width: 90%;
   }
 
-  .contact-image{
-    width: 90%;
+  .contact-image {
+    margin-top: 50px;
+    height: 300px;
   }
 
   .legend{
