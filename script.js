@@ -81,7 +81,6 @@ btn.forEach((e) => {
   });
 });
 
-
 // Form Validation
 
 const form = document.querySelector(".form");
@@ -162,33 +161,108 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-
 // send mail feature
-(function() {
-    emailjs.init("OllNTO72X5lwUHnq1");
+(function () {
+  emailjs.init("OllNTO72X5lwUHnq1");
 })();
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const name = form.querySelector(".name").value.trim();
-    const email = form.querySelector(".email").value.trim();
-    const subject = form.querySelector(".subject").value.trim();
-    const message = form.querySelector(".message").value.trim();
-    if (!name || !email || !subject || !message) {
-        form.querySelector(".finalErr").textContent = "Please fill in all fields.";
-        return;
-    } else {
-        form.querySelector(".finalErr").textContent = "";
-    }
-    emailjs.send("service_vd0cust", "template_p5cl6f1", {
-        name: name,
-        email: email,
-        subject: subject,
-        message: message
-    }).then(function(response) {
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const name = form.querySelector(".name").value.trim();
+  const email = form.querySelector(".email").value.trim();
+  const subject = form.querySelector(".subject").value.trim();
+  const message = form.querySelector(".message").value.trim();
+  if (!name || !email || !subject || !message) {
+    form.querySelector(".finalErr").textContent = "Please fill in all fields.";
+    return;
+  } else {
+    form.querySelector(".finalErr").textContent = "";
+  }
+  emailjs
+    .send("service_vd0cust", "template_p5cl6f1", {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    })
+    .then(
+      function (response) {
         alert("Message sent successfully!");
-        form.reset(); 
-    }, function(error) {
+        form.reset();
+      },
+      function (error) {
         alert("Failed to send message. Please try again.");
         console.log(error);
-    });
+      }
+    );
+});
+
+// Project
+
+const portfolio = document.querySelector(".portfolio");
+
+portfolio.addEventListener("click", () => {
+  alert("You are already watching it!!!");
+});
+
+const left = document.querySelector(".fa-caret-left");
+const right = document.querySelector(".fa-caret-right");
+const projectImg = document.querySelector(".project-image");
+
+let n = 1;
+
+function imageSlide(n) {
+  switch (n) {
+    case 1:
+      projectImg.innerHTML = `<img src="educare/homepage.png">`;
+      break;
+    case 2:
+      projectImg.innerHTML = `<img src="educare/whyeducare.png">`;
+      break;
+    case 3:
+      projectImg.innerHTML = `<img src="educare/homefeature.png">`;
+      break;
+    case 4:
+      projectImg.innerHTML = `<img src="educare/contactus.png">`;
+      break;
+    case 5:
+      projectImg.innerHTML = `<img src="educare/login.png">`;
+      break;
+    case 6:
+      projectImg.innerHTML = `<img src="educare/registration.png">`;
+      break;
+    case 7:
+      projectImg.innerHTML = `<img src="educare/userhome.png">`;
+      break;
+    case 8:
+      projectImg.innerHTML = `<img src="educare/userfeature.png">`;
+      break;
+    case 9:
+      projectImg.innerHTML = `<img src="educare/dashboard.png">`;
+      break;
+    case 10:
+      projectImg.innerHTML = `<img src="educare/taskmanager.png">`;
+      break;
+    case 11:
+      projectImg.innerHTML = `<img src="educare/budgetplanner.png">`;
+      break;
+    case 12:
+      projectImg.innerHTML = `<img src="educare/gpacalculator.png">`;
+      break;
+  }
+}
+
+right.addEventListener("click", () => {
+  n++;
+  if (n > 12) {
+    n = 12;
+  }
+  imageSlide(n);
+});
+
+left.addEventListener("click", () => {
+  n--;
+  if (n < 1) {
+    n = 1;
+  }
+  imageSlide(n);
 });
