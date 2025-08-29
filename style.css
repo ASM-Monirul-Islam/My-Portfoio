@@ -847,6 +847,7 @@ textarea {
   }
   #home {
     padding: 110px 10px 10px 10px;
+    min-height: 60vh;
   }
   .home-container {
     flex-wrap: wrap;
