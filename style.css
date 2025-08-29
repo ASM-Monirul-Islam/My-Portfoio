@@ -972,12 +972,29 @@ textarea {
     font-size: 0.9rem;
   }
 
+  .visual-showcase {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 30vh 10vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
   .project-image {
+    grid-area: 1 / 1 / 2 / 7;
     width: 100%;
   }
 
+  .left-swipe {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .right-swipe {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+
   .project-image img {
-    height: 40vh;
+    height: 30vh;
   }
 
   .project-link {
