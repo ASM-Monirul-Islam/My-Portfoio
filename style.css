@@ -587,17 +587,17 @@ section {
 }
 
 .project-image {
-  border: 4px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   width: 60vw;
 }
 
 .project-image img {
   height: 60vh;
   width: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-}
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  /* border: 4px solid rgba(0, 0, 0, 0.2); */
+  border-radius: 5px;
+}S
 
 .fa-caret-left {
   font-size: 3.5rem;
