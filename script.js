@@ -240,8 +240,8 @@ function toggleTheme() {
   bgColor.forEach((e) => {
     e.classList.toggle("black");
   });
-  
-  if(width<=728) {
+
+  if(width<=768) {
     navCont.classList.toggle("shadow");
   } else {
     nav.classList.toggle("shadow");
