@@ -668,7 +668,6 @@ section {
 /* Contact Section */
 
 #contact {
-  background-color: rgba(27, 126, 224, 0.1);
   padding: 40px 10px 20px 10px;
 }
 
@@ -925,7 +924,7 @@ textarea {
 
   .home-right-subtext {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .home-image {
@@ -967,16 +966,10 @@ textarea {
   }
 
   .edu-details {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 100%;
     padding-left: 10px;
   }
-
-  /* .education-title {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 0;
-  } */
 
   .edu-link {
     padding: 7px 15px;
@@ -1148,4 +1141,14 @@ textarea {
   .project-image img {
     height: 25vh;
   }
+}
+
+
+.black{
+  background-color: black;
+  color: white;
+}
+
+.shadow{
+  border-bottom: 0.5px solid white;
 }

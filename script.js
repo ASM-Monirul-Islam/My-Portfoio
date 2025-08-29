@@ -23,55 +23,6 @@ menu.addEventListener("click", () => {
   menuBartoggle();
 });
 
-// Theme Changer - need to improve more
-
-const light = '<i class="fas fa-sun"></i>';
-const dark = '<i class="fa-solid fa-moon"></i>';
-const themeChanger = document.querySelectorAll(".theme-changer");
-const blackColor = document.querySelectorAll(".black-color");
-const navBtnTheme = document.querySelectorAll(".nav-btn-theme");
-
-function Light_to_dark() {
-  //	Light to dark function
-  themeChanger.innerHTML = dark;
-  blackColor.forEach((e) => {
-    e.style.backgroundColor = "black";
-    e.style.color = "white";
-  });
-  navBtnTheme.forEach((e) => {
-    e.style.color = "white";
-  });
-}
-
-function Dark_to_light() {
-  //   Dark to Light Function
-
-  blackColor.forEach((e) => {
-    e.style.backgroundColor = "#cce7fc";
-    e.style.color = "black";
-  });
-  navBtnTheme.forEach((e) => {
-    e.style.color = "black";
-  });
-}
-
-let isLight = true;
-
-themeChanger.forEach((e) => {
-  e.addEventListener("click", () => {
-    if (isLight) {
-      Light_to_dark();
-      e.innerHTML = dark;
-    } else {
-      e.innerHTML = light;
-      Dark_to_light();
-    }
-    isLight = !isLight;
-  });
-});
-
-// Theme changer ends here...
-
 // Navigator button
 
 const btn = document.querySelectorAll("#menu-btn");
@@ -266,3 +217,114 @@ left.addEventListener("click", () => {
   }
   imageSlide(n);
 });
+
+// Theme Changer - need to improve more
+
+const light = '<i class="fas fa-sun"></i>';
+const dark = '<i class="fa-solid fa-moon"></i>';
+const themeChanger = document.querySelectorAll(".theme-changer");
+const bgColor = document.querySelectorAll(".bgColor");
+const fontColor = document.querySelectorAll(".fontColor");
+const iconColor = document.querySelectorAll(".fa-brands");
+const nav = document.querySelector(".nav-bar");
+const titleColor = document.querySelectorAll(".titleColor");
+const input = document.querySelectorAll(".input");
+const navCont = document.querySelector(".nav-container");
+const bring_to_top = document.querySelector(".bring-to-top");
+const formBtn = document.querySelector(".form-btn");
+
+let width = window.innerWidth;
+
+function toggleTheme() {
+  document.body.classList.toggle("black");
+  bgColor.forEach((e) => {
+    e.classList.toggle("black");
+  });
+  
+  if(width<=728) {
+    navCont.classList.toggle("shadow");
+  } else {
+    nav.classList.toggle("shadow");
+  }
+}
+
+function light_to_dark() {
+  fontColor.forEach((e) => {
+    e.style.color = "white";
+  });
+
+  iconColor.forEach((e) => {
+    e.style.color = "white";
+  });
+
+  titleColor.forEach((e) => {
+    e.style.color = "white";
+  });
+
+  form.style.border = "0.5px solid white";
+
+  input.forEach((e)=>{
+    e.style.backgroundColor = "black";
+    e.style.color = "white";
+  })
+
+  messageInput.style.backgroundColor = "black";
+  messageInput.style.color = "white";
+
+  bring_to_top.style.border = "0.5px solid white";
+
+  formBtn.style.backgroundColor = "black";
+  formBtn.style.color = "white";
+  formBtn.style.border = "0.5px solid white";
+}
+
+function dark_to_light() {
+  fontColor.forEach((e) => {
+    e.style.color = "black";
+  });
+
+  iconColor.forEach((e) => {
+    e.style.color = "black";
+  });
+
+  titleColor.forEach((e) => {
+    e.style.color = "rgba(0,0,0,0.6)";
+  });
+
+  form.style.border = "none";
+
+  input.forEach((e)=>{
+    e.style.backgroundColor = "white";
+    e.style.color = "black";
+  })
+
+  messageInput.style.backgroundColor = "white";
+  messageInput.style.color = "black";
+
+  bring_to_top.style.border = "none";
+
+  formBtn.style.backgroundColor = "#55b4f8";
+  formBtn.style.color = "black";
+  formBtn.style.border = "none";
+}
+
+let isLight = true;
+
+themeChanger.forEach((e) => {
+  e.addEventListener("click", () => {
+    if (isLight) {
+      // function to execute
+      toggleTheme();
+      light_to_dark();
+      e.innerHTML = dark;
+    } else {
+      // function to execute
+      toggleTheme();
+      dark_to_light();
+      e.innerHTML = light;
+    }
+    isLight = !isLight;
+  });
+});
+
+
