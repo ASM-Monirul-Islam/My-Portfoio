@@ -483,6 +483,58 @@ section {
   display: list-item;
 }
 
+/* Experience */
+
+#experience {
+  padding: 40px 10px;
+}
+
+.experience-title {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 40px;
+}
+
+.experience-container {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.exp-title {
+  font-size: 1.7rem;
+}
+
+.exp-title2 {
+  font-size: 1.4rem;
+  margin: 5px 15px;
+}
+
+.exp-list {
+  margin: 10px 0px 30px 50px;
+}
+
+.exp-list li {
+  font-size: 1.2rem;
+}
+
+.exp1 {
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
+.exp2 {
+  align-self: flex-end;
+  margin-right: 100px;
+}
+
+.exp3 {
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
 /* Projects */
 
 #projects {
@@ -910,8 +962,12 @@ textarea {
     text-align: center;
   }
 
+  .edu-content{
+    width: 100%;
+  }
+
   .edu-details {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     width: 100%;
     padding-left: 10px;
   }
@@ -1027,6 +1083,45 @@ textarea {
     align-self: center;
     margin: 20px 0px;
     width: 90%;
+  }
+
+  #experience {
+    min-height: 60vh;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-container {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .exp-title {
+    font-size: 1.3rem;
+  }
+
+  .exp-title2 {
+    font-size: 1.2rem;
+    margin: 10px 5px;
+  }
+
+  .exp-list {
+    margin: 10px 0px 30px 30px;
+  }
+
+  .exp-list li {
+    font-size: 1.1rem;
+  }
+
+  .exp1, .exp2, .exp3 {
+    align-self: flex-start;
+    margin: 20px 0px;
   }
 }
 
