@@ -291,7 +291,7 @@ function dark_to_light() {
     e.style.color = "rgba(0,0,0,0.6)";
   });
 
-  form.style.border = "none";
+  form.style.border = "1px solid gray";
 
   input.forEach((e)=>{
     e.style.backgroundColor = "white";
@@ -301,11 +301,11 @@ function dark_to_light() {
   messageInput.style.backgroundColor = "white";
   messageInput.style.color = "black";
 
-  bring_to_top.style.border = "none";
+  bring_to_top.style.border = "1px solid gray";
 
-  formBtn.style.backgroundColor = "#55b4f8";
+  formBtn.style.backgroundColor = "white";
   formBtn.style.color = "black";
-  formBtn.style.border = "none";
+  formBtn.style.border = "1px solid gray";
 }
 
 let isLight = true;

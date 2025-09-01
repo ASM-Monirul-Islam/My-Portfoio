@@ -695,7 +695,7 @@ section {
   gap: 0.5rem;
   width: 450px;
   background-color: white;
-  box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
+  border: 1px solid gray;
 }
 
 .input {
