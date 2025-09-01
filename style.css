@@ -257,25 +257,19 @@ section {
 }
 .view-work {
   padding: 17px 35px;
-  border: none;
   border-radius: 15px;
   margin-left: 20px;
-  /* background-color: rgba(27, 126, 224, 0.5); */
-  /* background-color: rgba(0, 0, 0, 0.9); */
-  /* box-shadow: 0 0 8px rgba(0, 128, 255, 0.5); */
   font-weight: 550;
-  border: 0.5px solid gray;
+  border: 1px solid gray;
   cursor: pointer;
   color: black;
 }
 
 .view-work:hover {
-  background-color: rgba(27, 126, 224, 0.9);
-  /* box-shadow: 0 0 8px rgb(1, 99, 198); */
+  background-color: rgba(27, 126, 224, 0.4);
   transform: scale(1.05, 1.05) translateY(-5px);
-  color: white;
-  /* background-color: black; */
-  transition: transform 0.3s ease;
+  border-color: transparent;
+  transition: 0.3s ease;
 }
 
 .view-work:active {
@@ -404,21 +398,19 @@ section {
   text-decoration: none;
   color: black;
   font-size: 1rem;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
-  border: 0.5px solid gray;
+  border: 1px solid gray;
   width: fit-content;
   padding: 12px 60px;
   border-radius: 15px;
   margin: auto;
   margin-top: 10px;
-  /* background-color: #badff9; */
   font-weight: 550;
 }
 .edu-link:hover {
   transform: scale(1.1, 1.1);
+  background-color: rgba(0, 128, 255, 0.3);
+  border-color: transparent;
   transition: 0.3s ease;
-  background-color: #55b4f8;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 /* Skill Section */
@@ -604,8 +596,8 @@ section {
 }
 
 .project-btn:hover {
-  background-color: rgba(27, 126, 224, 0.9);
-  box-shadow: 0 0 20px rgba(0, 128, 255, 0.5);
+  background-color: rgba(27, 126, 224, 0.3);
+  border-color: transparent;
   transition: 0.3s ease;
 }
 
@@ -723,12 +715,18 @@ textarea {
 }
 
 .form button {
-  background-color: #55b4f8;
-  border: none;
+  background-color: transparent;
+  border: 1px solid gray;
   padding: 10px 20px;
   border-radius: 10px;
   margin: 7px 0px 0px 0px;
   cursor: pointer;
+}
+
+.form button:hover{
+  background-color: rgba(27, 126, 224, 0.3);
+  border-color: transparent;
+  transition: 0.3s ease;
 }
 
 .error {
@@ -751,17 +749,20 @@ textarea {
 
 .bring-to-top {
   height: 30px;
+  margin: 15px 25px;
   color: black;
-  font-weight: 700;
+  font-weight: 550;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25px 0px;
   font-size: 1.3rem;
-  background-color: rgba(85, 180, 248, 0.4);
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 .bring-to-top:hover {
-  background-color: rgba(85, 180, 248, 0.8);
+  background-color: rgba(85, 180, 248, 0.4);
+  border-color: transparent;
   transition: 0.3s ease;
 }
 
