@@ -548,6 +548,10 @@ section {
   padding: 20px;
 }
 
+.project-3 {
+  padding: 30px 40px 20px 40px;
+}
+
 .project-title {
   font-size: 2rem;
   font-weight: 700;
