@@ -783,6 +783,21 @@ textarea {
   margin-left: 30px;
 }
 
+.certificate-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.view-certificate{
+  border: 0.5px solid gray;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+}
+
 @media only screen and (max-height: 620px) {
   .home-image {
     height: 400px;
